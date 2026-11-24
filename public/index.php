@@ -43,8 +43,7 @@ $errors=[]; if($_SERVER['REQUEST_METHOD'] ==='POST')
     </span>
     <br>
     <label>Message
-      <textarea name="message"><?= htmlspecialchars($message,ENT_QUOTES|ENT_SUBSTITUTE, 'UTF-8')?>
-    </textarea> 
+      <textarea name="message"><?= htmlspecialchars($message,ENT_QUOTES|ENT_SUBSTITUTE, 'UTF-8')?></textarea> 
     </label>
     <span><?= htmlspecialchars($errors['message']??'',ENT_QUOTES|ENT_SUBSTITUTE, 'UTF-8')?></span>
     <br>
